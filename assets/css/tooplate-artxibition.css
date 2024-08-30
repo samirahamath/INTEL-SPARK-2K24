@@ -2794,3 +2794,18 @@ button:active {
 .text-white {
   color: white;
 }
+/* Default for larger screens (e.g., laptops) */
+.responsive-video {
+  width: 80%;  /* Adjust percentage as needed for laptops */
+  height: auto;
+  max-width: 800px; /* Set a maximum width for laptops */
+}
+
+/* For mobile devices (screens smaller than 768px) */
+@media only screen and (max-width: 768px) {
+  .responsive-video {
+    width: 100%;  /* Video takes up full width on mobile */
+    height: auto;
+    max-width: 100%; /* No max-width, allowing it to be fully responsive */
+  }
+}
