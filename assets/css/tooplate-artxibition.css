@@ -2814,3 +2814,18 @@ button:active {
     max-width: 100%; /* No max-width, allowing it to be fully responsive */
   }
 }
+/* Default for larger screens (e.g., laptops) */
+.responsive-img {
+    width: 100%;  /* The image takes up full width of its container */
+    height: auto; /* Keeps the aspect ratio intact */
+    max-width: 400px; /* Maximum width for laptops */
+}
+
+/* For mobile devices (screens smaller than 768px) */
+@media only screen and (max-width: 768px) {
+    .responsive-img {
+        width: 100%;  /* The image takes up full width on mobile */
+        height: auto; /* Keeps the aspect ratio intact */
+        max-width: 100%; /* Ensure the image is fully responsive on mobile */
+    }
+}
